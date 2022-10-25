@@ -2,59 +2,59 @@
 <html lang="en">
   <head>
     <!-- Primary Meta Tags -->
-    <title>Lula 2º Turno — Gerar flyer de apoio ao Lula com seu nome</title>
+    <title>Casagrande 2º Turno — Gerar flyer de apoio ao Casagrande com seu nome</title>
     <meta
       name="title"
-      content="Lula 2º Turno — Gerar flyer de apoio ao Lula com seu nome"
+      content="Casagrande 2º Turno — Gerar flyer de apoio ao Casagrande com seu nome"
     />
     <meta
       name="description"
-      content="Gere seu flyer personalizado com seu nome de apoio ao Lula para o segundo turno das eleições brasileira"
+      content="Gere seu flyer personalizado com seu nome de apoio ao Casagrande para o segundo turno das eleições brasileira"
     />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://cristiantela.github.io/lula2turno/"
+      content="https://cristiantela.github.io/Casagrande2turno/"
     />
     <meta
       property="og:title"
-      content="Lula 2º Turno — Gerar flyer de apoio ao Lula com seu nome"
+      content="Casagrande 2º Turno — Gerar flyer de apoio ao Casagrande com seu nome"
     />
     <meta
       property="og:description"
-      content="Gere seu flyer personalizado com seu nome de apoio ao Lula para o segundo turno das eleições brasileira"
+      content="Gere seu flyer personalizado com seu nome de apoio ao Casagrande para o segundo turno das eleições brasileira"
     />
     <meta
       property="og:image"
       itemprop="image"
-      content="https://cristiantela.github.io/lula2turno/metadata.png"
+      content="https://cristiantela.github.io/Casagrande2turno/metadata.png"
     />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://cristiantela.github.io/lula2turno/"
+      content="https://cristiantela.github.io/Casagrande2turno/"
     />
     <meta
       property="twitter:title"
-      content="Lula 2º Turno — Gerar flyer de apoio ao Lula com seu nome"
+      content="Casagrande 2º Turno — Gerar flyer de apoio ao Casagrande com seu nome"
     />
     <meta
       property="twitter:description"
-      content="Gere seu flyer personalizado com seu nome de apoio ao Lula para o segundo turno das eleições brasileira"
+      content="Gere seu flyer personalizado com seu nome de apoio ao Casagrande para o segundo turno das eleições brasileira"
     />
     <meta
       property="twitter:image"
-      content="https://cristiantela.github.io/lula2turno/metadata.png"
+      content="https://cristiantela.github.io/Casagrande2turno/metadata.png"
     />
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lula 2° Turno</title>
+    <title>Casagrande 2° Turno</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -200,6 +200,7 @@
       <canvas width="1080" height="1080"></canvas>
 
       <footer>
+        <b style="color: white;">Cŕeditos para: </b>
         <a href="https://www.instagram.com/cristianfrontend/" target="_blank">
           <img src="img/cristiantela-profile.png" class="profile" />
           <img src="img/instagram-logo.svg" />
@@ -211,21 +212,6 @@
           <span>cristiantela/lula2turno</span>
         </a>
       </footer>
-
-      <smartphone>
-        <b>
-          Companheiros e companheiras, agradeço a todos que ajudaram e doaram,
-          com a ajuda de vocês consegui comprar um celular para trabalhar e sou
-          imensamente grato, saliento ainda que, esta página não tem nenhum
-          contato com o instagram @lula.turno2 (do qual possui o total direito
-          de imagem pela criação e administrado por @joaonogueraa), o que fiz,
-          foi apenas facilitar o processo de criação das tags customizados com
-          os nomes, ou seja, o desenvolvimento desta página, em prol da campanha
-          de Lula.
-        </b>
-        <br />
-        24 de Outubro de 2022
-      </smartphone>
     </div>
 
     <script>
@@ -233,7 +219,7 @@
       const context = canvas.getContext("2d");
 
       const baseImage = new Image();
-      baseImage.src = "./base.png";
+      baseImage.src = "./base2.png";
 
       const names = [
         "Jose",
@@ -397,7 +383,7 @@
       ];
 
       document.querySelector("input").value =
-        names[Math.floor(Math.random() * names.length)];
+        "Alessandra";
 
       document.querySelector("button").addEventListener("click", () => {
         const a = document.createElement("a");
@@ -450,8 +436,8 @@
 
           context.save();
 
-          context.translate(540, 348);
-          context.rotate((-2 * Math.PI) / 180);
+          context.translate(450, 200);
+          context.rotate((0 * Math.PI) / 180);
 
           context.textBaseline = "middle";
           context.font = "196.13px Bebas Neue";
@@ -459,7 +445,7 @@
             document.querySelector("input").value.trim()
           ).width;
 
-          context.fillStyle = "#1ABC4C";
+          context.fillStyle = "#fd97bfF0";
           roundRect(
             context,
             -width / 2 - 25,
