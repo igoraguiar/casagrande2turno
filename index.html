@@ -383,7 +383,7 @@
       ];
 
       document.querySelector("input").value =
-        "Alessandra";
+        names[Math.floor(Math.random() * names.length)];
 
       document.querySelector("button").addEventListener("click", () => {
         const a = document.createElement("a");
